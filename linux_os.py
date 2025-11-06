@@ -3,7 +3,7 @@
 ############### Helper Library for OS specific functions LINUX ##############
 #############################################################################
 #
-# Copyright (C) 2018-2019 by Alexander Nagy - https://bitekmindenhol.blog.hu/
+# Copyright (C) 2018-2025 by Alexander Nagy - https://bitekmindenhol.blog.hu/
 #
 import misc
 import time
@@ -506,7 +506,7 @@ def getRPIVer():
        "lan":"1",
        "bt":"1"
       }
-     elif (hwid in "b03111,b03112,b03114"):
+     elif (hwid in "b03111,b03112,b03114,b03115"):
       hwarr = { 
        "name": "Pi 4 Model B",
        "ram": "2GB",
@@ -542,7 +542,52 @@ def getRPIVer():
        "lan":"1",
        "bt":"1"
       }
-     elif (hwid in "c04170"):
+     elif (hwid in "a03140"):
+      hwarr = { 
+       "name": "Pi CM 4",
+       "ram": "1GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"0",
+       "bt":"1"
+      }
+     elif (hwid in "b03140"):
+      hwarr = { 
+       "name": "Pi CM 4",
+       "ram": "2GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"0",
+       "bt":"1"
+      }
+     elif (hwid in "c03140"):
+      hwarr = { 
+       "name": "Pi CM 4",
+       "ram": "4GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"0",
+       "bt":"1"
+      }
+     elif (hwid in "d03140"):
+      hwarr = { 
+       "name": "Pi CM 4",
+       "ram": "8GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"0",
+       "bt":"1"
+      }
+     elif (hwid in "b04170,b04171"):
+      hwarr = { 
+       "name": "Pi 5",
+       "ram": "2GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "c04170,c04171"):
       hwarr = { 
        "name": "Pi 5",
        "ram": "4GB",
@@ -551,10 +596,73 @@ def getRPIVer():
        "lan":"1",
        "bt":"1"
       }
-     elif (hwid in "d04170"):
+     elif (hwid in "d04170,d04171"):
       hwarr = { 
        "name": "Pi 5",
        "ram": "8GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "e04171"):
+      hwarr = { 
+       "name": "Pi 5",
+       "ram": "16GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "b04180,b041a0"):
+      hwarr = { 
+       "name": "Pi CM 5",
+       "ram": "2GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "c04180,c041a0"):
+      hwarr = { 
+       "name": "Pi CM 5",
+       "ram": "4GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "d04180,d041a0"):
+      hwarr = { 
+       "name": "Pi CM 5",
+       "ram": "8GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "e04180"):
+      hwarr = { 
+       "name": "Pi CM 5",
+       "ram": "16GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "d04190"):
+      hwarr = { 
+       "name": "Pi 500",
+       "ram": "8GB",
+       "pins": "40",
+       "wlan": "1",
+       "lan":"1",
+       "bt":"1"
+      }
+     elif (hwid in "e04190"):
+      hwarr = { 
+       "name": "Pi 500+",
+       "ram": "16GB",
        "pins": "40",
        "wlan": "1",
        "lan":"1",

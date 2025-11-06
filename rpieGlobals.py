@@ -3,10 +3,10 @@
 ################ Global constants and runtime variables #####################
 #############################################################################
 #
-# Copyright (C) 2018-2023 by Alexander Nagy - https://bitekmindenhol.blog.hu/
+# Copyright (C) 2018-2025 by Alexander Nagy - https://bitekmindenhol.blog.hu/
 #
 PROGNAME = "RPIEasy"
-BUILD   = 24098
+BUILD   = 25045
 PROGVER = str(BUILD)[:1]+"."+str(BUILD)[1:2]+"."+str(BUILD)[2:]
 
 gpMenu = []
